@@ -99,7 +99,11 @@ console.log(procent);
 
 //*GIT
 // git init - щоб GIT слідкував за папкою в якій він ініціалізірувався
+//git config --global user.name "John Doe" 
+//git config --global user.email johndoe@example.com
 // git status - переглянути якій статус у всіх файлах
 // git add -A - вибрати всі файли
 // git commit -m "my comment" - закомітити всі файли (зробити точку збереження)
 // git push - відправити всі (змінені) файли на репозиторій GitHub
+// git clone http://github/.. - скопіювати всі файли з репозиторія на іншій компютер
+// git pull - оновлює всі локальні файли до останьої версії (з репозиторія)
