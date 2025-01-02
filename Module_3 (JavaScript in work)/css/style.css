@@ -1,0 +1,58 @@
+h1 {
+   text-align: center;
+   color: green;
+}
+
+.wrapper {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 200px;
+   background-color: antiquewhite;
+}
+
+button {
+   margin-right: 20px;
+   width: 150px;
+   height: 100px;
+   background-color: #f01294;
+   border: none;
+}
+
+.yellow {
+   background-color: #ffe815;
+}
+
+.green {
+   background-color: #27c500;
+}
+
+.btn {
+   display: inline-block;
+   margin-top: 15px;
+   padding: 10px;
+   background-color: #24fc08;
+   cursor: pointer;
+}
+
+.wrap-animation {
+   position: relative;
+   margin-top: 20px;
+   width: 400px;
+   height: 400px;
+   border: 1px solid red;
+   padding: 20px;
+   overflow: scroll;
+
+}
+
+.box {
+   position: absolute;
+   width: 100px;
+   height: 100px;
+   background-color: #f7a103;
+}
+
+.text {
+   
+}

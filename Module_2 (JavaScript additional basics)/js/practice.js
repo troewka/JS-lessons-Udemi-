@@ -42,4 +42,4 @@ function deepCount(a){
 		return res;
 	}
 }
-console.log(deepCount(['1', 2, true, ['Sam']]));
+console.log(deepCount(['Jonh', '2', true, ['Sam']]));

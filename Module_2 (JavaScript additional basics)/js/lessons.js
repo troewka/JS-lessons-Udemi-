@@ -123,7 +123,7 @@ for (let key of salary) {
 	console.log(key);
 }
 
-//* Map (масивоподібні)
+//* Map (структура даних)
 // Те саме, що і об'єкт, тільки ключі можуть бути будь-якими типами данних (object,string, number, boolean). Object - тільки string. Map елементи йдуть по порядку.
 
 let maps = new Map(); //створення карти
@@ -159,7 +159,7 @@ console.log(newMap);
 let newObj = Object.fromEntries(maps);
 console.log(newObj);
 
-//* Set (масивоподібні)
+//* Set (структура даних)
 // Залишає тільки унікальні значення (має такі ж самі методи як і в Map)
 
 const newArr = ['Jonh', 'Adam', 'Nick', 'Jonh', 'Ann', 'Nick'];
