@@ -297,7 +297,7 @@ const myFunction = function(a, b) {
 const res2 = myFunction(10, 5);
 console.log(res2);
 
-// Стрілочна функція (не має свого контексту this)
+// Стрілочна функція (не має свого контексту this, визивається тільки після її об'явлення)
 const test = (a, b) => {
 	return (a + b);
 };

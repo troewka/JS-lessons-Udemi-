@@ -442,3 +442,56 @@ import {nums, firstName, sayHi} from './module' // робимо імпорт з 
 3. Запускаємо npx webpack
 4. Він зібрав всі модулі та створив головний файл (bundle.js) який підключаємо в html
 */
+
+//* Animation
+
+// requestAnimationFrame
+let pos = 0;
+
+function animateFreame () {
+	pos++;
+	elem.style.top = pos + 'px';
+	elem.style.left = pos + 'px';
+
+	if (pos < 300) {
+		requestAnimationFrame(animateFreame) // колбек функція, яка буде запускатись поки діє умова
+	}
+}
+
+requestAnimationFrame(animateFreame)
+
+// animate
+const elementImg = document.querySelectorAll('.picture'),
+	btns = document.querySelector('.btn-animate');
+
+let resultAnimate;
+
+btns.addEventListener('click', () => {
+	if (!resultAnimate) {
+		resultAnimate = elementImg[0].animate([
+			{transform: 'translateX(0) rotate(0deg)',
+			 filter: 'opacity(100%)'
+			},
+			{transform: 'translateX(200px) rotate(45deg)',
+			 filter: 'opacity(70%)'
+			},
+			{transform: 'translateX(400px) rotate(90deg)',
+			 filter: 'opacity(30%)'	
+			},
+			{transform: 'translateX(0) rotate(180deg)',
+			 filter: 'opacity(0%)'
+			},
+		], {
+			duration: 3000,
+			iterations: Infinity
+		});
+		//resultAnimate = elementImg.forEach(item => {
+		//});
+	} else if (resultAnimate.playState === 'paused') {
+		resultAnimate.play();
+	} else {
+		resultAnimate.pause();
+	}
+}); 
+
+

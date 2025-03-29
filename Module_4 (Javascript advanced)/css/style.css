@@ -11,3 +11,19 @@ input {
    padding: 10px;
    border: 1px solid red;
 }
+
+.anime {
+   display: flex;
+   flex-direction: column;
+   width: 200px;
+   height: 200px;
+}
+
+.btn-animate {
+   margin-top: 20px;
+   font-size: 20px;
+}
+
+.picture {
+   margin-top: 50px;
+}
