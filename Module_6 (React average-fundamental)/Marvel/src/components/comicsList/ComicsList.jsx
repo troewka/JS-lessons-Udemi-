@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom/cjs/react-router-dom.min';
 import useMarvelService from '../../services/MarvelService';
 import AppBanner from '../appBanner/AppBanner';
 import './comicsList.scss';
@@ -38,11 +39,11 @@ const ComicsList = () => {
                 <li className="comics__item"
                     key={item.id}
                     >
-                    <a href="#">
+                    <Link to={`comics/${item.id}`}>
                         <img src={item.thumbhail} alt="ultimate war" className="comics__item-img"/>
                         <div className="comics__item-name">{item.title}</div>
                         <div className="comics__item-price">{item.price}</div>
-                    </a>
+                    </Link>
                 </li>
             )
         });

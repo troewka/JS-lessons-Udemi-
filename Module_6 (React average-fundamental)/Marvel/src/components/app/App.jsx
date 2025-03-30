@@ -1,7 +1,7 @@
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom"
 import AppHeader from "../appHeader/AppHeader";
-import { ComicsPage, MainPage } from "../../page";
-import SingleComic from "../singleComic/SingleComic";
+import { ComicsPage, MainPage, NotFoundPage } from "../../page";
+import SingleComic from "../../page/comicsSingle/SingleComic";
 
 const App = () => {
     return (
@@ -16,7 +16,12 @@ const App = () => {
                         <Route exact path='/comics'>
                             <ComicsPage/>
                         </Route>
-                        {/*<SingleComic/>*/}
+                        <Route exact path='/comics/:id'>
+                            <SingleComic/>
+                        </Route>
+                        <Route path='*'>
+                            <NotFoundPage/>
+                        </Route>
                     </Switch>
                 </main>
             </div>
